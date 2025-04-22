@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculer.css">
+</head>
+<body>
+ 
+    <div id="corpoDaCalculadora">
+        <input type="text" name="conta" id="conta">
+        <div id="operadores">
+           <table id="teclado">
+            <tr>
+                <td onclick="sete()">7</td>
+                <td onclick="oito()">8</td>
+                <td onclick="nove()">9</td>
+                <td onclick="divisao()" class="operadores">/</td>
+            </tr>
+            <tr>
+                <td onclick="quatro()">4</td>
+                <td onclick="cinco()">5</td>
+                <td onclick="seis()">6</td>
+                <td onclick="multiplicacao()" class="operadores">x</td>
+            </tr>
+            <tr>
+                <td onclick="um()">1</td>
+                <td onclick="dois()">2</td>
+                <td onclick="tres()">3</td>
+                <td onclick="subtracao()" class="operadores">-</td>
+            </tr>
+            <tr>
+                <td onclick="apagar()" class="neutros">cc</td>
+                <td onclick="zero()">0</td>
+                <td onclick="adicao()" class="operadores">+</td>
+                <td onclick="calcular()" class="neutros
+                ">=</td>
+            </tr>
+           </table>
+        </div>
+    </div>
+
+    <script src="calculer.js"></script>
+</body>
+</html>
